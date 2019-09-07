@@ -12,7 +12,7 @@ build:
   verbosity: normal                                     # MSBuild verbosity level (quiet|minimal|normal|detailed)
 
 after_build:
-  - 7z a NPythonSample.zip "%APPVEYOR_BUILD_FOLDER%\NConstrictorSample\bin\Debug\*.*"
+  - 7z a NConstrictorSample.zip "%APPVEYOR_BUILD_FOLDER%\NConstrictorSample\bin\Debug\*.*"
 
 artifacts:  # Archive the generated packages in the ci.appveyor.com build report.  - path: bin\Debug\*
   - path: NConstrictorSample.zip
